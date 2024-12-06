@@ -5,6 +5,25 @@ body {
     color: #333;
     background: #f5f5f5;
   }
+
+  /**** Skip links ****/
+
+.skip ul{
+  list-style: none;
+  position: relative;
+}
+
+.skip a{
+  position: absolute;
+  top: -1000000px;
+}
+
+.skip a:focus{
+  top: 0;
+  background: red;
+  display: block;
+  padding: 10px;
+}
   
   /* Header Styles */
   .site-header {
@@ -256,7 +275,6 @@ body {
     margin: 0;
   }
   
-  /* Footer */
   .footer {
     border-top: 1px solid #dee2e6;
   }
@@ -271,7 +289,7 @@ body {
     color: #666;
   }
   
-  /* Responsive Adjustments */
+  /**** Responsive Adjustments ****/
   @media (max-width: 768px) {
     .hero {
       padding: 100px 0 40px;
@@ -310,7 +328,7 @@ body {
   .btn-primary {
     display: block;
     padding: 12px 15px;
-    background-color: #000; /* Black background */
+    background-color: #000;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -321,12 +339,12 @@ body {
   }
   
   .btn-primary:hover {
-    background-color: #222; /* Darker black on hover */
+    background-color: #222; 
   }
   main {
-    position: relative; /* For overlay positioning */
+    position: relative; 
     width: 100%;
-    min-height: 100vh; /* Full height */
+    min-height: 100vh; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -345,25 +363,24 @@ body {
   }
   
   main .content {
-    position: relative; /* Ensures content is above the overlay */
-    z-index: 2; /* Places content above the overlay */
+    position: relative; 
+    z-index: 2; 
     color: white;
     text-align: center;
   }
   
   /* Mobile and tablet background image */
   @media (max-width: 1024px) {
-    /* Adjust max-width as needed */
     main {
       background-image: url("../images/mobilebg.jpg");
     }
   }
   
-  /* Desktop version */
+  /**** for desktop ****/
   @media (min-width: 1025px) {
     main {
-      background-image: none; /* No background for desktop */
-      background-color: #f0f0f0; /* Optional fallback background color */
+      background-image: none;
+      background-color: #f0f0f0;
     }
     main .content {
       background-color: #f5f5f5;
@@ -373,7 +390,7 @@ body {
     rows: 1;
   }
   
-  /* For mobile and smaller screens */
+  /**** for mobile ****/
   @media (max-width: 768px) {
     .responsive-textarea {
       rows: 3;
